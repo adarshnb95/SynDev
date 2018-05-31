@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>SynDev</title>
+        <link rel="stylesheet" type="text/css" href="dj.css">
+        <link rel="stylesheet" type="text/css" href="foundation/css/foundation.min.css">
+
+        <style>
+
+            #add {
+
+                border-radius: 60px;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="">
+            <div class="card card-container">
+                <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+                <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />             
+                <form>
+                    <div class="row">
+                        <hr/>
+                        <div class="large-12 columns">
+                            <label>Enter the email addresses of the people to be invited
+                                <div id="input_container">
+                                    <input style="margin-top: 10px" type="email" placeholder="Email address" required="" /> 
+                                </div>
+                                <div class="button success tiny" id="add">Add invitee</div>
+                            </label>
+
+                            <input style="margin-top: 20px" type="submit" value="Invite" class="button expand small" />
+
+                        </div>
+
+                    </div>
+                </form>
+            </div><!-- /card-container -->
+        </div><!-- /container -->
+        <script src="jquery-1.11.3.min.js" ></script>
+        <script src="foundation/js/foundation.min.js" ></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#add").on("click", function () {
+                    var input = '<input style="margin-top: 10px" type="email" placeholder="Email address" required="" />';
+                    $("#input_container").append(input);
+                
+                });
+
+
+            });
+        </script>
+    </body>
+
+</html>
